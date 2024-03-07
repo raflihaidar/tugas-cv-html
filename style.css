@@ -1,0 +1,200 @@
+/* GLOBAL START*/
+
+/* aturan gaya yang menetapkan beberapa properti ke elemen <html> dan <body>, 
+termasuk menghapus margin dan padding bawaan serta menetapkan warna latar belakang 
+dan jenis huruf (font family). */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Aturan gaya ini menetapkan warna teks untuk elemen
+ heading level 2 (<h2>). */
+h2 {
+  color: #0d47a1;
+}
+
+/* Aturan gaya ini menetapkan lebar untuk elemen SVG (icon). */
+svg {
+  width: 1.3rem;
+}
+
+/* Aturan gaya ini menetapkan warna teks abu-abu untuk elemen dengan kelas "gray". */
+.gray {
+  color: gray;
+}
+
+/* Aturan gaya ini menetapkan properti untuk kontainer dengan kelas "container",
+ termasuk lebar, tinggi, margin, dan latar belakang. */
+.container {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  background-color: white;
+}
+/* GLOBAL END*/
+
+/* SUMMARY START */
+/* Aturan gaya ini menetapkan properti untuk bagian "summary", 
+termasuk warna latar belakang, warna teks, ukuran, padding, dan penataan. */
+.summary {
+  background-color: #0d47a1;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 0 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid black;
+}
+
+/* Aturan gaya ini menetapkan properti untuk deskripsi di dalam bagian "summary". */
+.summary .summary-description {
+  width: 75%;
+  text-align: justify;
+}
+
+/* Aturan gaya ini menetapkan properti untuk gambar profil di dalam bagian "summary" */
+.summary .profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* : Aturan gaya ini menetapkan properti untuk gambar 
+di dalam elemen dengan kelas "profile-image". */
+.summary .profile-image img {
+  width: 100%;
+}
+
+/* Aturan gaya ini menetapkan properti untuk elemen dengan kelas "title". */
+.summary .profile-image .title {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: large;
+}
+
+/* Aturan gaya ini menetapkan properti ukuran huruf untuk elemen dengan kelas "title". */
+.title,
+.title .job-desc {
+  font-size: 2rem;
+}
+
+/* Aturan gaya ini menetapkan properti tata letak menggunakan flexbox
+ untuk bagian kontak di halaman web. */
+.contact {
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0;
+  gap: 2.5rem;
+}
+
+/* Aturan gaya ini menetapkan properti seperti tata letak dan style list 
+untuk item daftar di dalam bagian kontak. */
+.contact li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+/* SUMMARY END*/
+
+/* WORK EXPERIENCE START */
+/* Aturan gaya ini menetapkan properti margin dan lebar elemen
+ untuk bagian pengalaman kerja di halaman web. */
+.work-experience,
+.academic,
+.techstack,
+.softskill,
+.hardskill {
+  width: 85%;
+  margin: 0 auto 50px auto;
+}
+
+/* Aturan gaya ini menetapkan properti margin untuk daftar yang
+ ada di dalam bagian pengalaman kerja. */
+.work-experience ul {
+  margin: 0;
+}
+
+.work-experience .job-title {
+  line-height: 15px;
+}
+
+/* Aturan gaya ini menetapkan properti jarak dan ketebalan font
+ untuk elemen dengan kelas "dot". */
+.dot {
+  align-items: center;
+  padding: 0 7px;
+  font-weight: bold;
+}
+
+/* WORK EXPERIENCE END */
+
+/* EDUCATION START*/
+.academic {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15rem;
+}
+
+.academic .education,
+.academic .activity {
+  line-height: 10px;
+}
+/* EDUCATION END*/
+
+/* TECH STACK START */
+
+.techstack ul {
+  display: grid;
+  grid-template-columns: repeat(8, 100px);
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.hardskill ul,
+.softskill ul {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+}
+
+/* Aturan gaya ini menetapkan properti untuk daftar yang ada di dalam 
+bagian teknologi, keterampilan keras, dan keterampilan lunak */
+.techstack ul li,
+.hardskill ul li,
+.softskill ul li {
+  list-style: none;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  box-sizing: border-box;
+}
+/* TECH STACK END */
