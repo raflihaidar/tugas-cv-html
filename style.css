@@ -32,7 +32,7 @@ svg {
 /* Aturan gaya ini menetapkan properti untuk kontainer dengan kelas "container",
  termasuk lebar, tinggi, margin, dan latar belakang. */
 .container {
-  width: 70%;
+  width: 75%;
   height: 100%;
   margin: 0 auto;
   padding-bottom: 5px;
